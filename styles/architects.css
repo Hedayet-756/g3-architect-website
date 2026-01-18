@@ -136,6 +136,23 @@ main > section{
     font-weight: 600;
 }
 
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -77px;
+
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architec{
+    width: 100%;
+}
 
 /* some facts related style */
 .fact-container{
@@ -188,7 +205,7 @@ main > section{
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-link, .team{
+    .navbar, .nav-link, .team, .features{
         flex-direction: column;
     }
     .team-img-container,
@@ -209,11 +226,15 @@ main > section{
         justify-items: center;
         gap: 50px;
     }
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 15px;
+    }
 }
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .team{
+    .team, .features{
         flex-direction: column;
     }
     .our-feaures{
@@ -224,5 +245,10 @@ main > section{
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
         justify-items: center;
+    }
+
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 15px;
     }
 }
